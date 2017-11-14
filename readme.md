@@ -23,3 +23,13 @@ Attach to the node
 
 ## Overview of how long it takes
 https://github.com/ethereum/go-ethereum/issues/14647#issuecomment-335325502
+
+## Development
+
+- Compile smart contracts: `truffle compile`
+- Start developemnt blockchain and console: `truffle develop`
+
+  Within the development console:
+    - Deploy contracts to the block chain from `/migrations`: `migrate`
+
+

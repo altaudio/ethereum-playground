@@ -1,5 +1,5 @@
-var Greeter = artifacts.require("./Greeter.sol");
+var HelloWorld = artifacts.require("HelloWorld");
 
 module.exports = function(deployer) {
-  deployer.deploy(Greeter, 'Hello from the Truffle Greeter!');
+  deployer.deploy(HelloWorld);
 };
