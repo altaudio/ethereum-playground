@@ -6,7 +6,7 @@ contract Bandit {
   uint lose = 0;
   uint nonce = 200;
 
-  function getRandomNumber() public constant returns (uint) {
+  function getRandomNumber() public returns (uint) {
     nonce++;
     return nonce;
   }
@@ -21,3 +21,4 @@ contract Bandit {
 }
 
 // Bandit.deployed().then(function(instance){return instance.getRandomNumber();});
+
