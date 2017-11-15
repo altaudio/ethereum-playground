@@ -2,12 +2,13 @@ pragma solidity ^0.4.4;
 
 contract Bandit {
   address owner = msg.sender;
-  uint256 win = 1;
-  uint256 lose = 0;
+  uint win = 1;
+  uint lose = 0;
+  uint nonce = 1;
 
-  function getRandomNumber() public constant returns (uint256) {
-    uint randomNumber = uint(block.blockhash(block.number-1))%10 + 1;
-    return randomNumber;
+  function getRandomNumber() public constant returns (uint) {
+    nonce++;
+    return uint(sha3(nonce))%10;
   }
 
 
@@ -18,3 +19,5 @@ contract Bandit {
     }
   }
 }
+
+// Bandit.deployed().then(function(instance){return instance.getRandomNumber();});
