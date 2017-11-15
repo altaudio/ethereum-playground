@@ -6,8 +6,11 @@ contract Bandit {
   uint lose = 0;
   uint nonce = 1;
 
-  function getRandomNumber() public returns (uint) {
+  function increment() public {
     nonce++;
+  }
+
+  function getRandomNumber() public returns (uint) {
     return nonce;
   }
 
@@ -19,6 +22,8 @@ contract Bandit {
     }
   }
 }
+
+// Bandit.deployed().then(function(instance){return instance.increment();});
 
 // Bandit.deployed().then(function(instance){return instance.getRandomNumber.call();}).then(function(value){return value.toNumber()});
 
