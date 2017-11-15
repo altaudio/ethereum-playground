@@ -8,7 +8,7 @@ contract Bandit {
 
   function getRandomNumber() public returns (uint) {
     nonce++;
-    return uint(sha3(nonce))%10;
+    return nonce;
   }
 
 
