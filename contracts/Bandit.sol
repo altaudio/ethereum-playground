@@ -4,7 +4,7 @@ contract Bandit {
   address owner = msg.sender;
   uint win = 1;
   uint lose = 0;
-  uint nonce = 1;
+  uint nonce = 200;
 
   function getRandomNumber() public constant returns (uint) {
     nonce++;
