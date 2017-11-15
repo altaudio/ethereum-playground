@@ -14,6 +14,10 @@ contract Bandit {
     return lose;
   }
 
+  function getCounter() public constant returns (uint256) {
+    return win;
+  }
+
 
   function kill() public {
     if(msg.sender == owner) {
