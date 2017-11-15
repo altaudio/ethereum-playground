@@ -11,6 +11,7 @@ contract Bandit {
   }
 
   function getRandomNumber() public returns (uint) {
+    increment();
     return nonce;
   }
 
