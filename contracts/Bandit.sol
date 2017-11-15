@@ -1,6 +1,8 @@
 pragma solidity ^0.4.4;
 
 contract Bandit {
+  address owner = msg.sender;
+
   function pullLever(uint userNumber) public returns (uint) {
     uint randomNumber = uint(block.blockhash(block.number-1))%10 + 1;
 
