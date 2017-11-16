@@ -1,7 +1,7 @@
 var HelloWorld = artifacts.require("HelloWorld");
-var Bandit = artifacts.require("Bandit");
+var Lottery = artifacts.require("Lottery");
 
 module.exports = function(deployer) {
   deployer.deploy(HelloWorld);
-  deployer.deploy(Bandit);
+  deployer.deploy(Lottery);
 };
