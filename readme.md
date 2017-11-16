@@ -41,6 +41,7 @@ https://github.com/ethereum/go-ethereum/issues/14647#issuecomment-335325502
 
   Within the development console:
     - Deploy contracts to the block chain from `/migrations`: `migrate`
+    - Deploy changes to contracts: `migrate --reset`
 
 ## Deploying to the Live Network
 

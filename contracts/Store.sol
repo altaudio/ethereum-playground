@@ -1,7 +1,7 @@
 pragma solidity ^0.4.0;
 
 contract HelloWorld {
-  uint256 counter = 5;
+  uint256 counter = 65;
   address owner = msg.sender;
 
   function add() public {
@@ -13,6 +13,10 @@ contract HelloWorld {
   }
 
   function getCounter() public constant returns (uint256) {
+    return counter;
+  }
+
+  function getCount() public constant returns (uint256) {
     return counter;
   }
 
